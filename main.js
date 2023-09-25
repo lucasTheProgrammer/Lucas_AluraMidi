@@ -16,7 +16,7 @@ listaDeTeclas[3].onclick = tocaSomPuff;
 
 listaDeTeclas[4].onclick = tocaSomSplash;
 
-listaDeTeclas[55].onclick = tocaSomToim;
+listaDeTeclas[5].onclick = tocaSomToim;
 
 listaDeTeclas[6].onclick = tocaSomPsh;
 
