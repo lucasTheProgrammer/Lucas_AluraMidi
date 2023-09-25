@@ -1,3 +1,4 @@
+alert ('terminei o 3 oque faço agora?')
 function tocaSomPom () {
     document.querySelector ('#som_tecla_pom').play();
 }
