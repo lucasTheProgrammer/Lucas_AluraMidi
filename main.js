@@ -15,8 +15,17 @@ for (let indice = 0; indice < listaDeTeclas.length; contador++) {
   const idAudio = `#som_${instrumento}`;
   tecla.onclick = function () {
     tocaSom(idAudio);
-  }
-  
-   
-  
+  } 
+
+
+    tecla.onkeydown = function () {
+    
+       tecla.classList.add('ativa')
+    }
+ 
+ 
+ 
 }
+ 
+ 
+
