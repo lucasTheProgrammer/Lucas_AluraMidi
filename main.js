@@ -10,24 +10,37 @@ const inputTel = document.querySelector('input[type=tel]');
 
 for (let indice = 0; indice < listaDeTeclas.length; contador++) {
 
-  const tecla = listaDeTeclas[indice];
-  const instrumento = tecla.classList[1]
-  const idAudio = `#som_${instrumento}`;
-  tecla.onclick = function () {
-    tocaSom(idAudio);
-  }
-    
-   
 
 
-    tecla.onkeydown = function () {
-    
-       tecla.classList.add('ativa')
+
+    const tecla = listaDeTeclas[indice];
+    const instrumento = tecla.classList[1]
+    const idAudio = `#som_${instrumento}`;
+    tecla.onclick = function () {
+        tocaSom(idAudio);
     }
- 
- 
- 
+          
+         
+      
+      
+    tecla.onkeydown = function () {
+          
+     tecla.classList.add('ativa');
+    }
+       
+       
+    tecla.onkeyup = function () {
+          
+        tecla.classList.remove('ativa');
+        
+       
+    }
+
+
+
 }
+
+
  
  
 
